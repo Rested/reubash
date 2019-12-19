@@ -29,3 +29,7 @@ HELP
 function aa () {
   echo "alias $1='${@:2}'" >> ~/.aliases
 }
+
+function grepal () {
+  echo $(cat ~/.aliases | grep $1)
+}
