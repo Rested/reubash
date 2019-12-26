@@ -53,3 +53,6 @@ alias sa='source /home/r/.aliases'
 alias b64='base64'
 # other apps
 alias dbm='dbmate'
+# wsl
+alias openwsl="powershell.exe /c start"
+# uncategorised
