@@ -5,6 +5,7 @@ function checkconflicts () {
     done | awk -F: '$2 ~ /file/'
 }
 if [[ $(checkconflicts) ]]; then
+    echo $(checkconflicts)
     echo "Conflicts found see above, modify alias first"
     exit 1
 else
