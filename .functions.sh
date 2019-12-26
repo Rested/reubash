@@ -33,3 +33,7 @@ function aa () {
 function grepal () {
   echo $(cat ~/.aliases | grep $1)
 }
+
+function lopen () {
+  open $(ifconfig | grep -A 1 eth0 | grep inet | grep -Eo [0-9\.]+ | head -n 1):$1
+}
