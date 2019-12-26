@@ -10,15 +10,24 @@ alias kaf='kubectl apply -f'
 alias kl='kubectl logs'
 alias klf='kubectl logs -f'
 alias kgn='kubectl get nodes'
+alias kgi='kubectl get ingress'
+alias kc='kubectl create'
+alias kdes='kubectl describe'
+alias kdel='kubectl delete'
+alias kpf='kubectl port-forward'
+alias kpfl='kubectl port-forward --address 0.0.0.0'
 ## other kubernetes stuff
 alias h='helm'
-
+alias f='fluxctl'
+alias a='argo'
 # docker
 alias dc='docker-compose'
 alias d='docker'
 alias dbt='docker build .'
 alias dr='docker run'
-
+alias dps='docker ps'
+alias ds='docker stop'
+alias dr='docker rm'
 # git
 alias grao='git remote add origin'
 alias g='git'
@@ -28,16 +37,19 @@ alias gd='git diff'
 alias gp='git push'
 alias ga='git add'
 alias gaa='git add .'
+alias gc='git commit'
+alias gpu='git pull'
 alias gt='git tag'
 alias gpo='git push origin'
 alias gpsup='git push --set-upstream origin master'
 # python
 alias der='dotenv run'
 alias podo='poetry run der'
-
 # unix
 alias t='touch'
 alias sp='source /home/r/.bashrc'
 alias x='chmod +x'
 alias sa='source /home/r/.aliases'
-
+alias b64='base64'
+# other apps
+alias dbm='dbmate'
