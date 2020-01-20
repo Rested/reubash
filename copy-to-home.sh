@@ -13,6 +13,14 @@ else
 fi
 cp .aliases.sh ~/.aliases
 cp .functions.sh ~/.functions
-cat ~/.bashrc | grep source | grep .aliases || echo "source ~/.aliases" >> ~/.bashrc
-cat ~/.bashrc | grep source | grep .functions || echo "source ~/.functions" >> ~/.bashrc
-if [ -f /tmp/foo.txt ]; then
+
+if [ -f ~/.bashrc ]; then
+    echo "Adding to .bashrc if not already there"
+    cat ~/.bashrc | grep source | grep .aliases || echo "source ~/.aliases" >> ~/.bashrc
+    cat ~/.bashrc | grep source | grep .functions || echo "source ~/.functions" >> ~/.bashrc
+fi
+if [ -f ~/.zshrc ]; then
+    echo "Adding to .zshrc if not already there"
+    cat ~/.zshrc | grep source | grep .aliases || echo "source ~/.aliases" >> ~/.zshrc
+    cat ~/.zshrc | grep source | grep .functions || echo "source ~/.functions" >> ~/.zshrc
+fi
