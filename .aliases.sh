@@ -52,7 +52,6 @@ alias grgo='git remote get-url origin'
 alias der='dotenv run'
 alias podo='poetry run der'
 alias poet='poetry'
-alias python='python3'
 # unix
 alias t='touch'
 alias sp='source /home/r/.bashrc'
