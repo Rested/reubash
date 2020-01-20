@@ -41,3 +41,7 @@ function wslip () {
 function lopen () {
   openwsl http://$(wslip):$1
 }
+
+function kdfns () {
+  kubectl config set-context --current --namespace=$1
+}
