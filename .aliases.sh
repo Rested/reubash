@@ -58,7 +58,7 @@ alias sp='source /home/r/.bashrc'
 alias x='chmod +x'
 alias sa='source /home/r/.aliases'
 alias b64='base64'
-alias c='xclip'
+alias c='xclip -selection clipboard'
 alias v='xclip -o'
 # other apps
 alias dbm='dbmate'
