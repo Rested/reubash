@@ -58,6 +58,8 @@ alias sp='source /home/r/.bashrc'
 alias x='chmod +x'
 alias sa='source /home/r/.aliases'
 alias b64='base64'
+alias c='xclip'
+alias v='xclip -o'
 # other apps
 alias dbm='dbmate'
 # wsl
